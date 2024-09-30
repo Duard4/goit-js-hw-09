@@ -9,10 +9,67 @@
 @import url('./base.css');
 @import url('./container.css');
 @import url('./animations.css');
+@import url('./gallery.css');
+@import url('./form.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.back-link {
+  display: block;
+  font-size: 1.25rem;
+  margin: 24px 0 32px;
+}
+.color {
+  transition: background var(--animation);
+}
+.blue {
+  background-color: var(--blue);
+}
+.red {
+  background-color: var(--red);
+}
+.blue:hover {
+  background-color: var(--hblue);
+}
+.red:hover {
+  background-color: var(--hred);
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+}
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--black);
+}
+.text__box {
+  padding: 8px 16px;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+}
+.btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: fit-content;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  transition: background var(--animation);
+}
+.nav {
+  gap: 18px;
+  display: grid;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.link {
+  transition: color var(--animation);
+}
+.link:hover {
+  color: var(--hblue);
+}

@@ -1,0 +1,33 @@
+.feedback-form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 8px;
+	width: fit-content;
+    text-align: start;
+    padding: 24px;
+}
+.form__input {
+	max-width: 360px;
+	margin-top: 8px;
+	width: 100%;
+    box-sizing: border-box;
+}
+.form__input::placeholder {
+	color: var(--white);
+	transition: color var(--animation);
+}
+.form__input:active::placeholder,
+.form__input:focus-within::placeholder {
+	color: var(--grey);
+}
+.form__input:hover {
+	border-color: var(--black);
+}
+.form__btn {
+	margin-top: 8px;
+}
+.message {
+    height: 80px;
+    resize: none; 
+}
