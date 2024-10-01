@@ -17,7 +17,7 @@ form.addEventListener('input', evt => {
 
 form.addEventListener('submit', evt => {
 	evt.preventDefault();
-	if (!(email.value.trim() && email.value.trim()))
+	if (!(message.value.trim() && email.value.trim()))
 		alert('Fill please all fields');
 	else {
 		console.log(formData);
