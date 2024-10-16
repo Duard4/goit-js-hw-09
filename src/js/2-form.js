@@ -4,10 +4,11 @@ const message = form.elements.message;
 const localStorageKey = 'feedback-form-state';
 
 const values = JSON.parse(localStorage.getItem(localStorageKey));
+
 email.value = values ? values.email : '';
 message.value = values ? values.message : '';
 
-let formData = { email: '', message: '' };
+let formData = { email: email.value, message: message.value };
 
 form.addEventListener('input', evt => {
 	if (evt.target == message) formData.message = message.value.trim();
